@@ -1,0 +1,12 @@
+Package: simulateCompetingJointData
+Type: Package
+Title: Simulate data for a recurrent event process and two competing terminal event processes.
+Version: 0.1.0
+Author: Lacey Etzkorn, Ph.D.
+Maintainer: Lacey Etzkorn <letzkor1@jhu.edu>
+Description: Simulate data for a recurrent event process and two competing terminal event processes. 
+This package supports the simulation study we do to verify a (upcoming) function in `frailtypack` called
+`competingJoint`.
+License: Undecided
+Encoding: UTF-8
+LazyData: true
