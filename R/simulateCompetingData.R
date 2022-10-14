@@ -30,10 +30,25 @@
 #' `trt` is an indicator for whether the individual recieved a treatment or not.
 #'
 #' @examples
-#' simulate.data(n=3)
+#' simulate.competing.data(n=3)
 #' @export
 
-simulate.competing.data <- function(n, truncate = 28, par0){
+simulate.competing.data <- function(
+		n,
+		truncate = 28,
+		par0 =c(
+			shapeR = 1.5,
+			scaleR = 10,
+			shapeM = 1.75,
+			scaleM = 16,
+			shapeD = 1.75,
+			scaleD = 16,
+			sigma = 0.5,
+			alphaM = 1,
+			alphaD = 0,
+			betaR = -0.5,
+			betaM = -0.5,
+			betaD = 0)){
 	K = truncate
 	tibble(
 	id = 1:n,
